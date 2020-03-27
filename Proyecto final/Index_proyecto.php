@@ -4,7 +4,7 @@
 	<title>Control de Universodad</title>
 </head>
 <form action="#" method="POST">
-<body bgcolor="Grey">
+<body background="4.JPG" style= "background-repaet: no-repaet;background-position: center center; background-size: 1240px 1100px;">
 <center><h1>Seleccione su opcion</h1></center>
 <center><h1><select onchange="window.location.href=this.options[this.options.selectedIndex].value" name="opcion" size="1">
     <option value="#">Elija a donde se quiera dirigir.</option>
