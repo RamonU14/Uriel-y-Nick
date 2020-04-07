@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 07-04-2020 a las 10:38:07
+-- Tiempo de generación: 07-04-2020 a las 20:43:29
 -- Versión del servidor: 10.4.10-MariaDB
 -- Versión de PHP: 7.3.12
 
@@ -98,20 +98,23 @@ INSERT INTO `grupos` (`ID`, `NumG`, `Nombre`) VALUES
 
 DROP TABLE IF EXISTS `maestros`;
 CREATE TABLE IF NOT EXISTS `maestros` (
+  `ID` int(30) NOT NULL AUTO_INCREMENT,
   `Numem` varchar(15) NOT NULL,
   `Nombre` varchar(40) NOT NULL,
   `Correo` varchar(40) NOT NULL,
-  `Telefono` varchar(12) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `Telefono` varchar(12) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `maestros`
 --
 
-INSERT INTO `maestros` (`Numem`, `Nombre`, `Correo`, `Telefono`) VALUES
-('52', 'Ramon', 'frfr@2015de', '8653156'),
-('6512', 'uriel hdz', 'frfr@2015de', '65456'),
-('645', 'ITI', 'frfr@2015de', '654986');
+INSERT INTO `maestros` (`ID`, `Numem`, `Nombre`, `Correo`, `Telefono`) VALUES
+(1, '52', 'Ramon', 'frfr@2015de', '8653156'),
+(2, '6512', 'uriel hdz', 'frfr@2015de', '65456'),
+(3, '645', 'ITI', 'frfr@2015de', '654986'),
+(4, '15', 'Uriel', 'uriel@145hdz', '4448596245');
 
 -- --------------------------------------------------------
 
